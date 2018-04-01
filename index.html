@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Login to Featurama</title>
-	<meta name="description" content="Login page for Featurama.">
-<!--Helpers ==================================================================================== -->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="featurama">
-	<meta property="og:description" content="social media, sharing subjects, pinterest, facebook">
-	<meta property="og:url" content="https://www.featurama.com/">
-  	<meta property="og:site_name" content="Featurama">
-  	<link rel="canonical" href="https://www.featurama.com/">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.ico">
-<!-- CSS ======================================================================================= -->
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Featurama</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Forum|UnifrakturCook:700" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-	
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '359452194556490',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-      
-    
-	FB.getLoginStatus(function(response) {
-	    statusChangeCallback(response);
-	});   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-
-  function statusChangeCallback(response){
-  	if(response.status === 'connected'){
-  		console.log('Logged in and authenticated');
-  	} else {
-  		console.log('Not authenticated');
-  	}
-  }
-</script>
+	<section class="landing">
+		<div class="landing-inner">
+			<div class="featurama">Featurama</div>
+			<p>A social network that features your life.</p>
+			<div class="comingsoon"><span>C</span>oming <span>S</span>oon</div>
+			<div class="countdown"></div>
+		</div>
+	</section>
+	<footer>
+		<div class="copy">&copy;&nbsp;<a href="http://ioannisbatsios.com" target="_blank">Ioannis Batsios</a></div>
+		<div class="chang">
+			Photo courtesy of: 
+		<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@chang612?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Chang Duong"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Chang Duong</span></a>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
 </body>
 </html>
