@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Login to Featurama</title>
+	<meta name="description" content="Login page for Featurama.">
+<!--Helpers ==================================================================================== -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="featurama">
+	<meta property="og:description" content="social media, sharing subjects, pinterest, facebook">
+	<meta property="og:url" content="https://www.featurama.com/">
+  	<meta property="og:site_name" content="Featurama">
+  	<link rel="canonical" href="https://www.featurama.com/">
+<!-- Favicons =================================================================================-->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+<!-- CSS ======================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Forum|UnifrakturCook:700" rel="stylesheet">
+</head>
+<body>
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=359452194556490&autoLogAppEvents=1';
+			  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
+	<div class="container-login">
+		<div class="overlay">
+			<form>
+				<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+				<button><img src="img/google_signin_buttons/web/1x/btn_google_signin_dark_pressed_web"></button>
+
+			</form>
+			
+		</div>
+	</div>
+</body>
+</html>
